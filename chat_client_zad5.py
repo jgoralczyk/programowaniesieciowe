@@ -5,7 +5,7 @@ HOST = ''
 PORT = 9888
 BUFFER_SIZE = 1024
 
-def receive_message(sock):
+def receive_message(sock: socket):
     while True:
         try:
             data_bytes, _ = sock.recvfrom(BUFFER_SIZE)
