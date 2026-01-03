@@ -21,6 +21,7 @@ def callback(ch, method, properties, body):
 # 4. Rejestracja konsumenta
 channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
 
+
 print(' [*] Czekam na wiadomości. Aby wyjść, naciśnij CTRL+C')
 
 # 5. KLUCZOWY MOMENT - pętla blokująca
