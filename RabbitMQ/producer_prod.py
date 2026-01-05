@@ -49,7 +49,7 @@ class RabbitMQProducer:
         if self.connection:
             self.connection.close()
 
-# PRZYKŁAD UŻYCIA:
+
 if __name__ == "__main__":
     producer = RabbitMQProducer()
     
